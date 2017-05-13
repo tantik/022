@@ -1,0 +1,180 @@
+/* header */
+#header{
+	background: url('../images/bg-header.jpg') no-repeat 50% 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+	.holder{
+		position: relative;
+		padding-top: 9px;
+		.logo{
+			position: absolute;
+			top: 21px;
+			right: 0;
+			width: 154px;
+			height: 25px;
+			background: url('../images/logo.png') no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+			a{
+				display: block;
+				height: 100%;
+			}
+		}
+		.stock{
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			margin: -14px 0 0 56px;
+			padding: 0 0 36px;
+			list-style: none;
+			z-index: 10;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 34px;
+				height: 34px;
+				margin: -11px 0 0 -35px;
+				background: url('../images/icon-plus.png') no-repeat;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: 5px;
+				left: 50%;
+				margin: 0 0 0 -29px;
+				width: 22px;
+				height: 40px;
+				background: url('../images/icon-equally.png') no-repeat;
+				overflow: hidden;
+			}
+			li{
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				.item{
+					display: inline-block;
+					vertical-align: top;
+					position: relative;
+					font-size: 18px;
+					line-height: 22px;
+					color: #333;
+					font-weight: normal;
+					padding: 0 18px;
+					margin-bottom: 8px;
+					text-shadow: -2px 2px 1px rgba(255,255,255,0.8), 2px -2px 1px rgba(255,255,255,0.8), 2px 2px 1px rgba(255,255,255,0.8), -2px -2px 1px rgba(255,255,255,0.8);
+					strong.ttl{
+						display: inline-block;
+						vertical-align: top;
+						padding: 0 28px;
+						margin-bottom: 7px;
+						font: bold 18px/22px  "HiraKakuPro W3", Arial, Helvetica, san-serif;
+						position: relative;
+						&:before{
+							content: '';
+							position: absolute;
+							top: 50%;
+							left: 0;
+							width: 26px;
+							height: 38px;
+							margin-top: -19px;
+							background: url('../images/sep-l-header.png') no-repeat;
+						}
+						&:after{
+							content: '';
+							position: absolute;
+							top: 50%;
+							right: 0;
+							width: 26px;
+							height: 38px;
+							margin-top: -19px;
+							background: url('../images/sep-r-header.png') no-repeat;
+						}
+					}
+					.img{
+						display: block;
+						background: #fff;
+						width: 158px;
+						height: 105px;
+						line-height: 105px;
+						border-radius: 10px;
+						border: 1px solid #e73f33;
+						text-align: center;
+						margin: 0 auto;
+						-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+						-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+						box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+						img{
+							vertical-align: middle;
+							max-width: 100%;
+							max-height: 100%;
+						}
+					}
+				}
+			}
+		}
+		.price-row{
+			margin: 0 0 6px 31px;
+			.low-price{
+				display: inline-block;
+				vertical-align: top;
+				margin: -5px 0 0;
+			}
+			.price{
+				display: inline-block;
+				vertical-align: top;
+				margin: 1px 0 0 -6px;
+			}
+		}
+		.list{
+			position: relative;
+			margin: 0;
+			padding: 0 10px 39px;
+			list-style: none;
+			li{
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				width: 190px;
+				min-height: 120px;
+				line-height: 100px;
+				border-radius: 25px;
+				padding: 5px 12px;
+				border: 5px solid #e73f33;
+				background: rgba(255,255,255,0.7);
+				@include box-sizing;
+				.item{
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 26px;
+					line-height: 30px;
+					font-weight: 600;
+					text-shadow: -2px 2px 1px rgba(255,255,255,0.8), 2px -2px 1px rgba(255,255,255,0.8), 2px 2px 1px rgba(255,255,255,0.8), -2px -2px 1px rgba(255,255,255,0.8);
+					span{
+						color: #e73f33;
+					}
+				}
+				& + li{
+					margin-left: 21px;
+				}
+				&.device{
+					position: relative;
+					padding-left: 20px;
+					padding-right: 20px;
+					&:after{
+						content: '';
+						position: absolute;
+						right: -296px;
+						bottom: -107px;
+						width: 298px;
+						height: 205px;
+						background: url('../images/icon-device.png') no-repeat;
+					}
+				}
+			}
+		}
+	}
+}
