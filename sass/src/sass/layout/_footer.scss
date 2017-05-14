@@ -132,6 +132,7 @@
 		.holder{
 			padding: 9px 2px;
 			.col{
+				width: 55%;
 				padding: 0 2px;
 				@include box-sizing;
 				h2{display: none;}
@@ -153,28 +154,32 @@
 					}
 				}
 				.btn{
-					font-size: 14px;
-					line-height: 15px;
+					font-size: 15px;
+					line-height: 29px;
+					font-weight: bold;
 					border-bottom-width: 4px;
-					padding: 5px 30px;
+					padding: 5px 10px 5px 30px;
 					min-width: 128px;
 					text-align: center;
 					span{
 						display: block;
 					}
 					&:before{
-						left: 6px;
+						left: 8px;
 						width: 16px;
 						height: 16px;
 						margin-top: -8px;
 					}
 					&:after{
-						left: 12px;
+						left: 14px;
 						margin-top: -4px;
 						border-top: 4px solid transparent;
 						border-left: 5px solid #e83428;
 						border-bottom: 4px solid transparent;
 					}
+				}
+				&:last-child{
+					width: 45%;
 				}
 			}
 		}
