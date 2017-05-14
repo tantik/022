@@ -1,6 +1,7 @@
 $(document).ready(initPage);
 function initPage(){
 	initFooter();
+	initScrol();
 }
 
 function initFooter() {
@@ -11,4 +12,13 @@ function initFooter() {
 			jQuery('#footer').removeClass('visible');
 		}
 	});
+}
+function initScrol() {
+	$(".links-blocks").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top -10;
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+
 }
